@@ -1,30 +1,32 @@
+import { HeroSectionImage } from '@/constants/images';
 import { MapPin, Clock, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 export default function NearbyChurches() {
   const churches = [
     {
-      image: "https://images.unsplash.com/photo-1548625149-fc4a29cf7092?w=800&q=80",
+      image: HeroSectionImage,
       name: "Holy Spirit Church",
       distance: "2.5 km away",
       liveEvent: "Live Now: Morning Dhyanam",
       timing: "10:00 AM - 11:30 AM"
     },
     {
-      image: "https://images.unsplash.com/photo-1581368087049-b91a2d7d6e88?w=800&q=80",
+      image: HeroSectionImage,
       name: "Holy Spirit Church",
       distance: "2.5 km away",
       liveEvent: "Live Now: Morning Dhyanam",
       timing: "10:00 AM - 11:30 AM"
     },
     {
-      image: "https://images.unsplash.com/photo-1519491050282-cf00c82424b4?w=800&q=80",
+      image: HeroSectionImage,
       name: "Holy Spirit Church",
       distance: "2.5 km away",
       liveEvent: "Live Now: Morning Dhyanam",
       timing: "10:00 AM - 11:30 AM"
     },
     {
-      image: "https://images.unsplash.com/photo-1519491050282-cf00c82424b4?w=800&q=80",
+      image: HeroSectionImage,
       name: "Holy Spirit Church",
       distance: "2.5 km away",
       liveEvent: "Live Now: Morning Dhyanam",
@@ -33,7 +35,7 @@ export default function NearbyChurches() {
   ];
 
   return (
-    <div className="min-h-screen bg-white py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
         {/* Header */}
         <div className="flex items-start justify-between mb-8 sm:mb-10 lg:mb-12">
@@ -65,9 +67,11 @@ export default function NearbyChurches() {
             >
               {/* Image */}
               <div className="relative aspect-[4/3] overflow-hidden">
-                <img
+                <Image
                   src={church.image}
                   alt={church.name}
+                  height={100}
+                  width={100}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
