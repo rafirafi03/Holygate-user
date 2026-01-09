@@ -1,26 +1,26 @@
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-import { HeroImage, spiritualImage } from '../../../constants/images'
+import { HeroSectionImage } from '../../../constants/images'
 
 export default function MiraclesSection() {
   const miracles = [
     {
-      image: HeroImage,
+      image: HeroSectionImage,
       title: "Healing Miracle",
       description: "A powerful testimony of physical healing received through prayer and faith, reflecting God's restoring grace."
     },
     {
-      image: spiritualImage,
+      image: HeroSectionImage,
       title: "Financial Breakthrough",
       description: "A testimony of unexpected provision and financial restoration through divine intervention."
     },
     {
-      image: HeroImage,
+      image: HeroSectionImage,
       title: "Deliverance Testimony",
       description: "A testimony of freedom from spiritual, emotional, or physical bondage through God's power."
     },
     {
-      image: spiritualImage,
+      image: HeroSectionImage,
       title: "Family Restoration ",
       description: "A story of reconciliation, unity, and renewed relationships brought together through prayer."
     }
